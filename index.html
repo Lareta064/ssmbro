@@ -23,6 +23,7 @@
 	<link rel="shortcut icon" href="img/favicon.png"  type="image/x-icon" />
     <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 
+
 </head>
 <body>
 
@@ -31,49 +32,83 @@
 	<![endif]-->
 
 	<!-- Здесь пишем код -->
-    <!--шапка-->
-    <header class="header-block"> 
-        <div class="monitor text-center">
-            <h3 class="moitor-slogan">Что это? Посмотри видео!</h3>
-            <img src="img/monitor.png" class="img-responsive" alt="monitor">
-            
-        </div>	
-     	<div class="header-block__content">
-            <div class="container">
-	     	     <div class="header-block__navigation">
-	     			<div class="logo">
-	     				<img src="img/logo.png" class="img-responsive">
-                    </div>
-	     			<nav class="header-block-nav">
-	     				<a href="#cards">Зачем?</a>
-	     				<a href="#responsive">Возможности</a>
-	     				<a href="#utilise">Тариф</a>
-	     			</nav>
-	     			<a class="header-block__entre" href="#">Вход</a>
-	     		</div>
-	     		<div class="header-block__content-text">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-6">
-	     			           <h1 class="header-block__content-text-head">сервис,<br> которого долго<br> ждали smm-щики!</h1>
-                             </div>
-                        </div>
-                         <div class="row">
-                             <div class="col-sm-5">
-                                 <h3 class="header-block__content-text-slogan">
-                                   Увеличиваем конверсию рассылок с помощью поведенческого фактора пользователей !
-                               </h3>
-                                <h3 class="header-block__content-text-slogan">
-                                   Настало время<br> вариативных воронок в VK !
-                               </h3>
-                             </div>
-                         </div>  
-                    </div>
-	     		</div>
+    
+    <!--косой зеленый блок-->
+    <div class="header-skew-block"></div>
+    <!--//косой зеленый блок-->
+    <!--контент в шапке-->
+
+        <div class="header-block__content">
+            <div class="header-block__content-text">
+                <h1 class="text-uppercase">сервис,<br> которого долго<br> ждали smm-<span class="text-lowcase">щики</span>!</h1>
+                <h3 class="header-block__content-text-slogan">
+                    Увеличиваем конверсию рассылок с помощью поведенческого фактора пользователей!
+                </h3>
+                <h3 class="header-block__content-text-slogan">
+                    Настало время<br> вариативных воронок в VK!
+                </h3>
             </div>
-     	</div>
+
+            <div class="header-block__content-monitor text-center">
+                <h3 class="text-uppercase">Что это? Посмотри видео!</h3>
+                <div class="monitor">
+                    <img src="img/monitor.png" class="img-responsive" alt="monitor">
+                    
+                </div>
+            </div>
+        </div> <!--//header-block__content-->
+        <!--//контент в шапке-->     
+    <!--шапка-->
+
+    <header class="header-block"> 
+        
+        <!--топ-меню-->
+        <div class="header-top">
+            <div class="container">
+                <div class="top-menu">
+                    <div class="logo">
+                        <a href="#"><img src="img/logo.png" alt="" /></a>
+                    </div>
+                    
+                    <nav class="navigation">
+                        <ul class="navigation__list">
+                            <li class="navigation__list-item"><a href="#cards">Зачем?</a></li>
+                            <li class="navigation__list-item"><a href="#responsive">Возможности</a></li>
+                            <li class="navigation__list-item"><a href="#utilise">Тариф</a></li>                            
+                        </ul>
+                    </nav>
+                     <a class="header-block__entre" href="#" >Вход</a>
+                      <!--Иконка навигации для маленьких экранов-->
+                    <button id="navigation__button" class="cmn-toggle-switch cmn-toggle-switch__htx">
+                        <span>toggle menu</span>
+                    </button>
+                      <!--//Иконка навигации для маленьких экранов-->
+
+               </div>
+            </div>
+        </div>
+        <!--//топ-меню-->
+       <div class="header-xs-head text-center">
+            <h1 class="text-uppercase">сервис,<br> которого долго<br> ждали smm-<span class="text-lowcase">щики</span>!</h1>
+                <h3 class="header-block__content-text-slogan">
+                    Увеличиваем конверсию рассылок с помощью поведенческого фактора пользователей!
+                </h3>
+                <h3 class="header-block__content-text-slogan">
+                    Настало время<br> вариативных воронок в VK!
+                </h3>
+         </div>
     </header>
     <!--//шапка-->
+   <section class="video-xs text-center">
+    <div class="video-xs-content">
+        <div class="container">
+            <div class="col-xs-10 col-xs-offset-1 visible-xs">
+                <h3 class="text-uppercase">Что это? Посмотри видео!</h3>
+                <img src="img/monitor.png" class="img-responsive" alt="monitor">
+            </div>    
+        </div>
+    </div>
+    </section>
      <!--1 экран-->
     <section class="fire">
         <div class="container">
@@ -94,26 +129,26 @@
      <!--2 экран карточки-->
     <section class="cards text-center" id="cards">
      	<div class="container">
-     		<h2 class="section-head-h2">Часто бывает такое?</h2>
+     		<h2 class="section-head-h2 head-uppercase ">Часто бывает такое?</h2>
      		<div class="row">
      			<div class="col-sm-4">
      				<div class="cards-item text-center">
      					<img src="img/dog1.png" class="img-responsive">
-     					<h4 class="cards-item-head">Заголовок</h4>
+     					<h4 class="cards-item-head text-uppercase">Ситуация 1</h4>
      					<p class="page-paragraf">Подписчик уехал на неделю в деревню, а по приезду у него забита личка сообщениями от вас.</p>
      				</div>
      			</div>
      			<div class="col-sm-4">
      				<div class="cards-item text-center">
      					<img src="img/dog2.png" class="img-responsive">
-     					<h4 class="cards-item-head">Заголовок</h4>
+     					<h4 class="cards-item-head text-uppercase">Ситуация 2</h4>
      					<p class="page-paragraf">Лид уже получил предложение о покупке (письмо №2), но еще даже не успел прочитать ознакомительное сообщение или посмотреть видео (письмо №1).</p>
      				</div>
      			</div>
      			<div class="col-sm-4">
      				<div class="cards-item text-center">
      					<img src="img/dog3.png" class="img-responsive">
-     					<h4 class="cards-item-head">Заголовок</h4>
+     					<h4 class="cards-item-head text-uppercase">Ситуация 3</h4>
      					<p class="page-paragraf">Какой-то текст...Какой-то текст...Какой-то текст...
                         Какой-то текст...Какой-то текст...Какой-то текст...Какой-то текст...Какой-то текст...Какой-то текст...
                        Какой-то текст...</p>
@@ -162,6 +197,7 @@
      	</div>
     </section>
     <!--//3 экран карточки-->
+
     <!--4 экран карточки-->
     <section class="utilise text-center" id="utilise">
         <div class="container">
@@ -172,7 +208,7 @@
                     <div class="fire-content-button">
                        <a href="#" class="fire-content-button-text after-start">Попробовать бесплатно!</a>
                      </div>
-                     <p class="paragraf text-uppercase">7 дней бесплатного доступа</p>
+                     <p class="paragraf text-start">7 дней бесплатного доступа</p>
                      <p class="paragraf">А после 290 рублей в месяц за 1 сообщество без каких либо ограничений.</p>
                 </div>
                 
@@ -205,6 +241,7 @@
 	<script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js"></script>
 
     <!--мои скрипты-->
-	<script src="js/main.js"></script>
+    <script src="js/main.js"></script>
+	<script src="js/navigation.js"></script>
 </body>
 </html>

@@ -1,0 +1,126 @@
+.ssmpro {
+	position: relative;
+	padding-top: 70px;
+	background-color: #fff;
+}
+.ssmpro::before {
+	position: absolute;
+    content: "";
+    top: 0;
+    left:0;
+    right:0;
+    height: 80%;
+    background-color: @bgbody;
+    z-index: 1;
+
+}
+.ssmpro .container {
+	position: relative;
+	z-index: 2;
+}
+.head-green {
+	color: @head-color;
+}
+.head-uppercase {
+	text-transform: uppercase;
+	margin-top: 0;
+	margin-bottom: 40px;
+}
+.magrin-bottom-20 {
+	margin-bottom: 10px;
+}
+.page-paragraf {
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 26px;
+	color: #2a5885;
+	margin-bottom: 40px;
+	@media (min-width: 768px){
+		font-size: 15px;
+		line-height: 22px;
+	}
+	@media (min-width: 992px){
+	 		font-size: 18px;
+	 		line-height: 24px;	 		
+	 	}
+
+	 	@media (min-width: 1200px){
+	 	font-size: 20px;
+	 	line-height: 26px
+	 }
+}
+/*******************************/
+.ssmpro {
+	
+}
+.ssmpro__round-block {
+	
+	/*border: 3px dotted @border-color;*/
+}
+.ssmpro__round-block  img {
+		
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 40px;
+	}
+
+.ssmpro__quadro-block {
+	padding: 50px 30px 44px 45px;
+	border: 3px dotted #147f70;
+	border-radius: 15px;
+	
+	background-color: @bgbody;
+    box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.75);
+    margin-bottom: 100px;
+    @media (min-width: 768px){
+    	padding: 30px 15px
+    }
+    @media (min-width: 992px){
+    	padding: 35px 15px
+    }
+    @media (min-width: 1200px){
+    	padding: 50px 30px 44px 45px;
+    }
+    
+}
+
+
+.margin-bottom-45 {
+	margin-bottom: 45px;
+	line-height: 25px;
+	@media (min-width: 992px){
+	 		margin-bottom: 35px;
+	 	}
+
+	 	@media (min-width: 1200px){
+	 		margin-bottom: 45px;
+	 	}
+}
+
+ul.ssmpro__quadro-block-list {
+	position: relative;
+	list-style-type: none;
+
+	 & li {
+	 	font-size: 20px;
+	 	line-height: 28px;
+	 	@media (min-width: 768px){
+	 		font-size: 16px;
+	 	    line-height: 24px;
+	 	}
+	 	@media (min-width: 992px){
+	 		font-size: 16px;
+	 	    line-height: 26px;
+	 	}
+	 	@media (min-width: 1200px){
+	 		font-size: 20px;
+	 	    line-height: 28px;
+	 	}
+
+	 	& span {
+	 		font-size: 14px;
+	 		margin-right: 5px;
+	 	}
+	 }
+}
+
